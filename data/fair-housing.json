@@ -1,0 +1,102 @@
+{
+  "course": "Fair Housing",
+  "note": "This study companion summarizes federal Fair Housing law to help you review; it is not the official course — complete the Empire Learning Fair Housing course to earn CE credit.",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Unit 1: The Fair Housing Act — History & Overview",
+      "body": "The federal Fair Housing Act is Title VIII of the Civil Rights Act of 1968. It was signed into law one week after the assassination of Dr. Martin Luther King Jr. and prohibits discrimination in the sale, rental, and financing of housing. Its purpose is to provide fair and equal access to housing throughout the United States and to replace patterns of segregation with open, integrated communities.\n\nThe 1968 Act built on an earlier foundation. The Civil Rights Act of 1866 was the first federal law to bar racial discrimination, guaranteeing all citizens the same right to inherit, purchase, lease, sell, and hold real and personal property. Because the 1866 Act covers race and applies to ALL property with no exemptions, it remains a powerful tool that closes loopholes in the later law.\n\nThe Act has grown over time. A 1974 amendment added sex as a protected class. The Fair Housing Amendments Act of 1988 added disability (handicap) and familial status, and it significantly strengthened enforcement — giving HUD administrative law judges authority to hear cases and increasing the penalties available against those who discriminate.",
+      "summary": [
+        "The federal Fair Housing Act is Title VIII of the Civil Rights Act of 1968.",
+        "The Civil Rights Act of 1866 bars racial discrimination in ALL property with no exemptions.",
+        "A 1974 amendment added sex as a protected class.",
+        "The Fair Housing Amendments Act of 1988 added disability and familial status and strengthened enforcement."
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Unit 2: Protected Classes",
+      "body": "The federal Fair Housing Act protects seven classes: race, color, religion, national origin, sex, disability, and familial status. A licensee may not treat people differently in a housing transaction because of any of these characteristics.\n\nTwo classes deserve special attention. Familial status protects households with one or more children under 18, as well as pregnant women and people in the process of securing custody of a child — it is what prohibits \"adults-only\" housing outside of qualified senior housing. Disability protects people with a physical or mental impairment that substantially limits a major life activity. Disability brings two distinct duties: a reasonable accommodation is a change in rules, policies, or services (for example, allowing a service animal despite a no-pets policy), while a reasonable modification is a physical change to the unit (for example, installing a ramp or grab bars) — in private housing the tenant generally pays for modifications.\n\nProtections continue to expand. HUD interprets \"sex\" to include sexual orientation and gender identity, so discrimination on those bases is treated as prohibited sex discrimination under federal law. Utah's own Fair Housing Act adds sexual orientation and gender identity as expressly protected classes. Because state lists change, always verify the current Utah protected classes with the Utah Division of Real Estate.",
+      "summary": [
+        "Seven federal classes: race, color, religion, national origin, sex, disability, familial status.",
+        "Familial status protects households with children under 18, pregnant women, and those gaining custody.",
+        "Disability: reasonable accommodation = a rule/policy change; reasonable modification = a physical change to the unit.",
+        "HUD reads \"sex\" to include sexual orientation and gender identity; Utah adds both — verify current classes with the Utah Division of Real Estate."
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Unit 3: Prohibited Practices",
+      "body": "The Fair Housing Act bans a wide range of discriminatory conduct based on a protected class. The most direct violations are refusing to sell or rent (or pretending housing is unavailable) and offering different terms, conditions, or privileges — such as a higher deposit, different fees, or stricter rules for members of a protected class.\n\nSeveral practices have their own names. Steering is directing prospects toward or away from particular neighborhoods based on a protected characteristic. Blockbusting (panic selling) is inducing owners to sell by suggesting that people of a particular class are moving into the area. Redlining is the refusal by lenders or insurers to provide loans or insurance in certain neighborhoods based on the protected makeup of the area. Discriminatory advertising — any statement or ad that indicates a preference, limitation, or discrimination — is prohibited even when the underlying transaction would otherwise be exempt.\n\nOther violations include denying a person access to or membership in a multiple listing service (MLS) or other real estate organization, and harassment or intimidation of anyone exercising their fair housing rights. Both blatant and subtle versions of these practices are illegal.",
+      "summary": [
+        "Refusing to sell/rent or imposing different terms based on a protected class is prohibited.",
+        "Steering (directing by class), blockbusting (panic selling), and redlining (lending/insurance denial) are banned.",
+        "Discriminatory advertising is prohibited even when the transaction itself would be exempt.",
+        "Denying MLS access and harassing those exercising fair housing rights are also violations."
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Unit 4: Exemptions & Enforcement",
+      "body": "A few narrow exemptions exist under the federal Act. A single-family home sold or rented by the owner is exempt if the owner does not use a real estate broker or agent and does not use discriminatory advertising (and owns three or fewer such homes). The \"Mrs. Murphy\" exemption covers an owner-occupied building of four or fewer units. Housing operated by religious organizations and by private clubs may limit occupancy to their members under certain conditions.\n\nThese exemptions have firm limits. They NEVER apply to race — the Civil Rights Act of 1866 bars racial discrimination in all property — and they NEVER excuse discriminatory advertising. The moment a broker, agent, or discriminatory ad is involved, the exemption is lost.\n\nEnforcement gives victims real remedies. A person who believes they were discriminated against may file a complaint with HUD within one year of the violation, or file suit in federal court within two years. HUD investigates and may refer matters to the Department of Justice, which can bring litigation in cases of a pattern or practice of discrimination. Penalties can include actual and punitive damages, injunctive relief, and civil penalties that increase for repeat offenders.",
+      "summary": [
+        "Exemptions: single-family sold/rented by owner without a broker; owner-occupied buildings of ≤4 units (\"Mrs. Murphy\"); religious organizations; private clubs.",
+        "Exemptions NEVER apply to race and NEVER excuse discriminatory advertising.",
+        "File a HUD complaint within one year of the violation (or sue in federal court within two years).",
+        "HUD may refer to the DOJ for pattern-or-practice litigation; penalties include damages and civil fines."
+      ]
+    }
+  ],
+  "quiz": {
+    "m1": [
+      { "q": "The federal Fair Housing Act is which part of the Civil Rights Act of 1968?", "choices": ["Title II", "Title VI", "Title VIII", "Title IX"], "answer": 2, "explanation": "The Fair Housing Act is Title VIII of the Civil Rights Act of 1968." },
+      { "q": "Which law first prohibited racial discrimination and applies to ALL property with no exemptions?", "choices": ["The Civil Rights Act of 1866", "Title VIII of 1968", "The 1974 amendment", "The Fair Housing Amendments Act of 1988"], "answer": 0, "explanation": "The Civil Rights Act of 1866 bars racial discrimination in all property and has no exemptions." },
+      { "q": "What did the Fair Housing Amendments Act of 1988 add?", "choices": ["Sex only", "Race and color", "Religion and national origin", "Disability and familial status (plus stronger enforcement)"], "answer": 3, "explanation": "The 1988 amendments added disability and familial status and strengthened enforcement." }
+    ],
+    "m2": [
+      { "q": "How many classes are protected under the federal Fair Housing Act?", "choices": ["Five", "Six", "Seven", "Nine"], "answer": 2, "explanation": "There are seven federal protected classes: race, color, religion, national origin, sex, disability, and familial status." },
+      { "q": "Allowing a service animal despite a no-pets policy is an example of a:", "choices": ["Reasonable modification", "Reasonable accommodation", "Blockbusting waiver", "Steering exception"], "answer": 1, "explanation": "A reasonable accommodation is a change in rules or policies; a modification is a physical change to the unit." },
+      { "q": "Familial status protects which group?", "choices": ["Senior citizens only", "Households with children under 18, pregnant women, and those securing custody", "Married couples only", "Tenants over 18 without children"], "answer": 1, "explanation": "Familial status protects households with children under 18, pregnant women, and people securing custody of a child." }
+    ],
+    "m3": [
+      { "q": "Directing prospective buyers toward or away from neighborhoods based on a protected class is called:", "choices": ["Blockbusting", "Redlining", "Steering", "Harassment"], "answer": 2, "explanation": "Steering is guiding prospects toward or away from areas based on a protected characteristic." },
+      { "q": "A lender refusing to make loans in a neighborhood because of its protected makeup is:", "choices": ["Redlining", "Steering", "Blockbusting", "A reasonable accommodation"], "answer": 0, "explanation": "Redlining is the refusal to lend or insure in an area based on its protected composition." },
+      { "q": "Inducing owners to sell by claiming a protected group is moving into the area is:", "choices": ["Steering", "Redlining", "Blockbusting (panic selling)", "Lawful marketing"], "answer": 2, "explanation": "Blockbusting, or panic selling, is prohibited under the Fair Housing Act." }
+    ],
+    "m4": [
+      { "q": "The \"Mrs. Murphy\" exemption applies to:", "choices": ["Any apartment complex", "An owner-occupied building of four or fewer units", "Single-family homes sold through a broker", "Newly built condominiums"], "answer": 1, "explanation": "The Mrs. Murphy exemption covers owner-occupied buildings of four or fewer units." },
+      { "q": "Fair housing exemptions NEVER apply to:", "choices": ["Familial status", "Religion", "Race or discriminatory advertising", "National origin"], "answer": 2, "explanation": "Exemptions never apply to race (per the 1866 Act) and never excuse discriminatory advertising." },
+      { "q": "A complaint with HUD generally must be filed within:", "choices": ["30 days", "Six months", "One year of the violation", "Five years"], "answer": 2, "explanation": "A HUD complaint must be filed within one year of the alleged violation." }
+    ]
+  },
+  "flashcards": {
+    "m1": [
+      { "front": "What is the Fair Housing Act?", "back": "Title VIII of the Civil Rights Act of 1968, barring housing discrimination." },
+      { "front": "Civil Rights Act of 1866", "back": "First law to bar racial discrimination; covers ALL property with no exemptions." },
+      { "front": "1974 amendment", "back": "Added sex as a protected class." },
+      { "front": "Fair Housing Amendments Act of 1988", "back": "Added disability and familial status; strengthened enforcement." },
+      { "front": "Purpose of the Act", "back": "Provide fair, equal access to housing and replace segregation with open communities." }
+    ],
+    "m2": [
+      { "front": "Seven federal protected classes", "back": "Race, color, religion, national origin, sex, disability, familial status." },
+      { "front": "Familial status", "back": "Households with children under 18, pregnant women, and people securing custody of a child." },
+      { "front": "Disability", "back": "A physical or mental impairment that substantially limits a major life activity." },
+      { "front": "Accommodation vs. modification", "back": "Accommodation = change in rules/policies; modification = physical change to the unit (tenant usually pays in private housing)." },
+      { "front": "Sexual orientation & gender identity", "back": "HUD reads \"sex\" to include them; Utah adds both — verify current classes with the Utah Division of Real Estate." }
+    ],
+    "m3": [
+      { "front": "Steering", "back": "Directing prospects toward or away from areas based on a protected class." },
+      { "front": "Blockbusting", "back": "Inducing panic selling by claiming a protected group is moving in." },
+      { "front": "Redlining", "back": "Refusing loans or insurance in an area based on its protected makeup." },
+      { "front": "Discriminatory advertising", "back": "Any ad indicating a preference/limitation; banned even in otherwise-exempt deals." },
+      { "front": "Other prohibited practices", "back": "Refusing to sell/rent, different terms, denying MLS access, and harassment." }
+    ],
+    "m4": [
+      { "front": "Single-family owner exemption", "back": "Exempt if sold/rented by owner without a broker and without discriminatory advertising." },
+      { "front": "Mrs. Murphy exemption", "back": "Owner-occupied building of four or fewer units." },
+      { "front": "Other exemptions", "back": "Religious organizations and private clubs (limited to members, under conditions)." },
+      { "front": "Exemption limits", "back": "Never apply to race; never excuse discriminatory advertising." },
+      { "front": "Enforcement", "back": "File a HUD complaint within one year; DOJ may litigate pattern/practice; penalties include damages and civil fines." }
+    ]
+  }
+}

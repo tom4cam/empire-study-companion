@@ -44,18 +44,29 @@ html, body {
   color: var(--muted);
   text-transform: uppercase;
 }
-.module-select { display: block; }
-#module-picker {
+.picker { display: block; margin-bottom: 8px; }
+.picker:last-child { margin-bottom: 0; }
+.picker-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 4px 2px;
+}
+.picker select {
   width: 100%;
   appearance: none;
   background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%239aa3b2' d='M1 1l5 5 5-5'/%3E%3C/svg%3E") no-repeat right 16px center;
   border: 1px solid var(--line);
   color: var(--text);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 12px 40px 12px 14px;
+  padding: 11px 40px 11px 14px;
   border-radius: var(--radius);
 }
+#course-picker { border-color: var(--accent); }
 
 /* Main view */
 .view {

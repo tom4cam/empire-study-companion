@@ -2,12 +2,11 @@
   "use strict";
 
   const state = {
-    content: null,
-    quiz: null,
-    cards: null,
+    index: null,        // index.json
+    courseId: null,
+    course: null,       // loaded course bundle
     moduleId: null,
     tab: "read",
-    // per-feature transient state
     cardIndex: 0,
     cardFlipped: false,
     quizIndex: 0,
@@ -18,8 +17,9 @@
   const $ = (sel) => document.querySelector(sel);
   const view = $("#view");
 
-  const LS_MODULE = "re_study_last_module";
-  const LS_BEST = "re_study_best_scores";
+  const LS_COURSE = "re_study_last_course";
+  const LS_MODULE = "re_study_last_module";   // keyed object: { courseId: moduleId }
+  const LS_BEST = "re_study_best_scores";     // keyed: "courseId/moduleId": pct
 
   async function loadJSON(path) {
     const res = await fetch(path, { cache: "no-store" });
@@ -29,51 +29,75 @@
 
   async function init() {
     try {
-      const [content, quiz, cards] = await Promise.all([
-        loadJSON("data/content.json"),
-        loadJSON("data/quiz.json"),
-        loadJSON("data/flashcards.json"),
-      ]);
-      state.content = content;
-      state.quiz = quiz;
-      state.cards = cards;
+      state.index = await loadJSON("data/index.json");
     } catch (err) {
-      view.innerHTML = `<div class="empty">Couldn't load study material.<br><br>
-        <button class="btn" onclick="location.reload()">Reload</button></div>`;
-      console.error(err);
-      return;
+      return fail(err);
     }
+    const courseIds = state.index.courses.map((c) => c.id);
+    const savedCourse = localStorage.getItem(LS_COURSE);
+    state.courseId = courseIds.includes(savedCourse) ? savedCourse : courseIds[0];
 
-    $("#course-title").textContent = state.content.course || "Study Companion";
-
-    const saved = localStorage.getItem(LS_MODULE);
-    const ids = state.content.modules.map((m) => m.id);
-    state.moduleId = ids.includes(saved) ? saved : ids[0];
-
-    buildModulePicker();
+    buildCoursePicker();
     bindTabs();
+    await loadCourse(state.courseId);
+  }
+
+  function fail(err) {
+    console.error(err);
+    view.innerHTML = `<div class="empty">Couldn't load study material.<br><br>
+      <button class="btn" onclick="location.reload()">Reload</button></div>`;
+  }
+
+  function buildCoursePicker() {
+    const picker = $("#course-picker");
+    picker.innerHTML = "";
+    state.index.courses.forEach((c) => {
+      const opt = document.createElement("option");
+      opt.value = c.id;
+      opt.textContent = c.title;
+      picker.appendChild(opt);
+    });
+    picker.value = state.courseId;
+    picker.addEventListener("change", () => {
+      localStorage.setItem(LS_COURSE, picker.value);
+      resetTransient();
+      loadCourse(picker.value);
+    });
+  }
+
+  async function loadCourse(courseId) {
+    state.courseId = courseId;
+    const meta = state.index.courses.find((c) => c.id === courseId);
+    view.innerHTML = '<div class="empty">Loading course…</div>';
+    try {
+      state.course = await loadJSON(`data/${meta.file}`);
+    } catch (err) {
+      return fail(err);
+    }
+    // pick remembered module within this course, else first
+    const ids = state.course.modules.map((m) => m.id);
+    const remembered = rememberedModule(courseId);
+    state.moduleId = ids.includes(remembered) ? remembered : ids[0];
+    buildModulePicker();
     render();
   }
 
   function buildModulePicker() {
     const picker = $("#module-picker");
     picker.innerHTML = "";
-    state.content.modules.forEach((m) => {
+    state.course.modules.forEach((m) => {
       const opt = document.createElement("option");
       opt.value = m.id;
       opt.textContent = m.title;
       picker.appendChild(opt);
     });
-    // "Mixed" only relevant to quiz; added/removed dynamically
     picker.value = state.moduleId;
-    picker.addEventListener("change", () => {
+    picker.onchange = () => {
       state.moduleId = picker.value;
-      if (state.moduleId !== "__mixed__") {
-        localStorage.setItem(LS_MODULE, state.moduleId);
-      }
+      if (state.moduleId !== "__mixed__") rememberModule(state.courseId, state.moduleId);
       resetTransient();
       render();
-    });
+    };
   }
 
   function syncMixedOption() {
@@ -82,12 +106,12 @@
     if (state.tab === "quiz" && !hasMixed) {
       const opt = document.createElement("option");
       opt.value = "__mixed__";
-      opt.textContent = "★ Mixed (all modules)";
+      opt.textContent = "★ Mixed (all units)";
       picker.appendChild(opt);
     } else if (state.tab !== "quiz" && hasMixed) {
       if (state.moduleId === "__mixed__") {
-        state.moduleId = state.content.modules[0].id;
-        localStorage.setItem(LS_MODULE, state.moduleId);
+        state.moduleId = state.course.modules[0].id;
+        rememberModule(state.courseId, state.moduleId);
       }
       picker.querySelector('option[value="__mixed__"]').remove();
     }
@@ -116,10 +140,11 @@
   }
 
   function currentModule() {
-    return state.content.modules.find((m) => m.id === state.moduleId);
+    return state.course.modules.find((m) => m.id === state.moduleId);
   }
 
   function render() {
+    if (!state.course) return;
     syncMixedOption();
     if (state.tab === "read") return renderReader();
     if (state.tab === "summary") return renderSummary();
@@ -130,36 +155,34 @@
   /* ---------- Reader ---------- */
   function renderReader() {
     const m = currentModule();
-    const note = state.content.note
-      ? `<div class="note-banner">${state.content.note}</div>` : "";
+    const note = state.course.note
+      ? `<div class="note-banner">${escapeHTML(state.course.note)}</div>` : "";
     const paras = (m.body || "")
-      .split(/\n+/)
-      .filter(Boolean)
-      .map((p) => `<p>${escapeHTML(p)}</p>`)
-      .join("");
+      .split(/\n+/).filter(Boolean)
+      .map((p) => `<p>${escapeHTML(p)}</p>`).join("");
     view.innerHTML = `<section class="reader">${note}
-      <h2>${escapeHTML(m.title)}</h2>${paras || '<p class="empty">No text captured for this module yet.</p>'}</section>`;
+      <h2>${escapeHTML(m.title)}</h2>${paras || '<p class="empty">No text for this unit yet.</p>'}</section>`;
   }
 
   /* ---------- Summary ---------- */
   function renderSummary() {
     const m = currentModule();
-    const items = (m.summary || []);
+    const items = m.summary || [];
     const list = items.length
       ? `<ul>${items.map((s) => `<li>${escapeHTML(s)}</li>`).join("")}</ul>`
-      : '<p class="empty">No summary for this module yet.</p>';
+      : '<p class="empty">No summary for this unit yet.</p>';
     view.innerHTML = `<section class="summary"><h2>${escapeHTML(m.title)} — Key Points</h2>${list}</section>`;
   }
 
   /* ---------- Flashcards ---------- */
   function moduleCards() {
-    return (state.cards.modules[state.moduleId] || []);
+    return (state.course.flashcards && state.course.flashcards[state.moduleId]) || [];
   }
 
   function renderCards() {
     const cards = moduleCards();
     if (!cards.length) {
-      view.innerHTML = '<div class="empty">No flashcards for this module yet.</div>';
+      view.innerHTML = '<div class="empty">No flashcards for this unit yet.</div>';
       return;
     }
     const i = Math.min(state.cardIndex, cards.length - 1);
@@ -205,16 +228,15 @@
 
   /* ---------- Quiz ---------- */
   function quizQuestions() {
-    if (state.moduleId === "__mixed__") {
-      return Object.values(state.quiz.modules).flat();
-    }
-    return state.quiz.modules[state.moduleId] || [];
+    const q = state.course.quiz || {};
+    if (state.moduleId === "__mixed__") return Object.values(q).flat();
+    return q[state.moduleId] || [];
   }
 
   function renderQuiz() {
     const qs = quizQuestions();
     if (!qs.length) {
-      view.innerHTML = '<div class="empty">No quiz questions for this module yet.</div>';
+      view.innerHTML = '<div class="empty">No quiz questions for this unit yet.</div>';
       return;
     }
     if (state.quizIndex >= qs.length) return renderScore(qs.length);
@@ -239,22 +261,19 @@
   function answer(idx, q, total) {
     if (state.quizAnswered) return;
     state.quizAnswered = true;
-    const btns = view.querySelectorAll(".choice");
-    btns.forEach((b, i) => {
+    view.querySelectorAll(".choice").forEach((b, i) => {
       b.disabled = true;
       if (i === q.answer) b.classList.add("correct");
       else if (i === idx) b.classList.add("wrong");
     });
     if (idx === q.answer) state.quizScore++;
-    const after = $("#after");
-    after.innerHTML = `<div class="explanation">${escapeHTML(q.explanation || "")}</div>
+    $("#after").innerHTML = `<div class="explanation">${escapeHTML(q.explanation || "")}</div>
       <button class="btn" id="next-q">${state.quizIndex + 1 < total ? "Next question ›" : "See score"}</button>`;
     $("#next-q").addEventListener("click", () => {
       state.quizIndex++;
       state.quizAnswered = false;
       renderQuiz();
     });
-    $("#choices").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
   function renderScore(total) {
@@ -277,23 +296,32 @@
     });
   }
 
-  function bestScore() {
+  /* ---------- persistence helpers ---------- */
+  function rememberedModule(courseId) {
+    try { return (JSON.parse(localStorage.getItem(LS_MODULE) || "{}"))[courseId]; }
+    catch { return null; }
+  }
+  function rememberModule(courseId, moduleId) {
     try {
-      const all = JSON.parse(localStorage.getItem(LS_BEST) || "{}");
-      return all[state.moduleId] ?? null;
-    } catch { return null; }
+      const all = JSON.parse(localStorage.getItem(LS_MODULE) || "{}");
+      all[courseId] = moduleId;
+      localStorage.setItem(LS_MODULE, JSON.stringify(all));
+    } catch { /* ignore */ }
+  }
+  function bestKey() { return `${state.courseId}/${state.moduleId}`; }
+  function bestScore() {
+    try { return (JSON.parse(localStorage.getItem(LS_BEST) || "{}"))[bestKey()] ?? null; }
+    catch { return null; }
   }
   function saveBest(pct) {
     try {
       const all = JSON.parse(localStorage.getItem(LS_BEST) || "{}");
-      if (all[state.moduleId] == null || pct > all[state.moduleId]) {
-        all[state.moduleId] = pct;
-        localStorage.setItem(LS_BEST, JSON.stringify(all));
-      }
+      const k = bestKey();
+      if (all[k] == null || pct > all[k]) { all[k] = pct; localStorage.setItem(LS_BEST, JSON.stringify(all)); }
     } catch { /* ignore */ }
   }
 
-  /* ---------- helpers ---------- */
+  /* ---------- misc ---------- */
   function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -303,8 +331,7 @@
   }
   function escapeHTML(s) {
     return String(s)
-      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
   init();

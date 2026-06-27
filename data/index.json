@@ -1,0 +1,11 @@
+{
+  "app": "RE CE Study Companion",
+  "disclaimer": "Study aid only. Complete the official timed courses on Empire Learning for CE credit.",
+  "courses": [
+    { "id": "code-of-ethics", "title": "Code of Ethics", "file": "code-of-ethics.json" },
+    { "id": "fair-housing", "title": "Fair Housing", "file": "fair-housing.json" },
+    { "id": "tax-benefits", "title": "Tax Benefits of Residential Rental Property", "file": "tax-benefits.json" },
+    { "id": "healthy-home", "title": "Healthy Home Fundamentals", "file": "healthy-home.json" },
+    { "id": "utah-mandatory", "title": "Utah Mandatory Residential Course", "file": "utah-mandatory.json" }
+  ]
+}
