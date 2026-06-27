@@ -1,0 +1,50 @@
+{
+  "course": "Code of Ethics — Study Companion",
+  "note": "Study aid based on the NAR Code of Ethics, structured to mirror your Empire Learning course. Complete the official course on Empire Learning for CE credit.",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Unit 1: History of NAR & the Code",
+      "body": "All REALTORS® are bound by a strong code of ethics that they pledge to comply with when they join the National Association of REALTORS®. The Code was originally adopted in 1913 and today is called the \"Code of Ethics and Standards of Practice.\"\n\nThe Code was one of the first codified ethical duties in any industry, predating many consumer-protection laws. It was inspired in part by the Golden Rule, and the preamble still references the ideal \"Whatsoever ye would that others should do to you, do ye even so to them.\"\n\nThe Code is revised regularly to reflect current practice. It is enforced by local REALTOR® associations through a peer-review process. Note the distinction: a \"REALTOR®\" is a licensee who is a member of NAR and bound by the Code; not every licensed agent is a REALTOR®.\n\nThe Code is organized into three groups of duties: Duties to Clients and Customers (Articles 1–9), Duties to the Public (Articles 10–14), and Duties to REALTORS® (Articles 15–17).",
+      "summary": [
+        "NAR Code of Ethics first adopted in 1913; titled \"Code of Ethics and Standards of Practice.\"",
+        "Rooted in the Golden Rule; enforced by local associations via peer review.",
+        "\"REALTOR®\" = a licensee who is an NAR member bound by the Code (not all licensees).",
+        "Three duty groups: to Clients/Customers (Art. 1–9), Public (Art. 10–14), REALTORS® (Art. 15–17)."
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Unit 2: Duties to Clients & Customers (Art. 1–9)",
+      "body": "Articles 1–9 cover the REALTOR®'s duties to clients and customers.\n\nArticle 1 — Protect and promote the client's interests while treating all parties honestly. Article 2 — Avoid misrepresentation; disclose known adverse factors (no concealment of pertinent facts), but no duty to discover latent defects. Article 3 — Cooperate with other brokers when it is in the client's best interest. Article 4 — Disclose any ownership interest when buying/selling for yourself or family. Article 5 — Disclose any present interest in a property you are providing professional services on.\n\nArticle 6 — Do not accept undisclosed compensation (no kickbacks/referral fees without the client's informed consent). Article 7 — Accept compensation from only one party without full disclosure and consent of all parties. Article 8 — Keep client funds in a separate escrow/trust account. Article 9 — Ensure agreements are in writing and in clear, understandable language; give copies to the parties.",
+      "summary": [
+        "Art. 1: Protect the client's interest; treat all parties honestly.",
+        "Art. 2: No misrepresentation; disclose known adverse facts (but no duty to discover hidden defects).",
+        "Art. 6–7: No undisclosed compensation; one-party compensation only with full disclosure/consent.",
+        "Art. 8: Client funds in a separate trust/escrow account. Art. 9: Agreements in writing, plain language."
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Unit 3: Duties to the Public (Art. 10–14)",
+      "body": "Articles 10–14 cover duties to the public.\n\nArticle 10 — Provide equal professional service to all; do not discriminate based on race, color, religion, sex, disability, familial status, national origin, sexual orientation, or gender identity. This mirrors and extends Fair Housing obligations. Article 11 — Provide only services within your competence; if you lack expertise, disclose it or engage someone qualified.\n\nArticle 12 — Present a true picture in advertising and marketing; no false or misleading claims, and disclose your status as a real estate professional. Article 13 — Do not engage in the unauthorized practice of law; recommend legal counsel when an issue is outside your expertise. Article 14 — Cooperate with the association's enforcement process; present all relevant facts in a professional-standards proceeding.",
+      "summary": [
+        "Art. 10: Equal professional service; no discrimination on protected characteristics.",
+        "Art. 11: Only provide services within your competence; otherwise disclose or get help.",
+        "Art. 12: Truthful advertising; disclose your professional status; no misleading claims.",
+        "Art. 13: No unauthorized practice of law. Art. 14: Cooperate with enforcement proceedings."
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Unit 4: Duties to REALTORS® (Art. 15–17)",
+      "body": "Articles 15–17 cover duties REALTORS® owe one another.\n\nArticle 15 — Do not make false or misleading statements about other real estate professionals, their businesses, or their practices. Article 16 — Do not engage in any practice that interferes with the exclusive agency, listing, or buyer/tenant agreements that other REALTORS® have with their clients (no soliciting another REALTOR®'s client where an exclusive relationship is known).\n\nArticle 17 — Submit contractual disputes (and certain non-contractual disputes) with other REALTORS® to arbitration through the association rather than litigating, when the association requires it.\n\nEnforcement: alleged violations are heard by the local association. Ethics complaints go to a Grievance Committee (screening) and then, if warranted, to a Professional Standards hearing panel. Remedies can include education, fines, or suspension/termination of membership.",
+      "summary": [
+        "Art. 15: No false or misleading statements about other professionals.",
+        "Art. 16: Don't interfere with other REALTORS®' exclusive agreements with clients.",
+        "Art. 17: Arbitrate contractual disputes through the association rather than litigate.",
+        "Enforcement: Grievance Committee screens; Professional Standards panel hears; remedies up to membership termination."
+      ]
+    }
+  ]
+}

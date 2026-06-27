@@ -1,0 +1,84 @@
+{
+  "modules": {
+    "m1": [
+      {
+        "q": "In what year was the NAR Code of Ethics first adopted?",
+        "choices": ["1908", "1913", "1934", "1968"],
+        "answer": 1,
+        "explanation": "The Code of Ethics was originally adopted in 1913, one of the first codified industry ethics standards."
+      },
+      {
+        "q": "Which statement best describes a \"REALTOR®\"?",
+        "choices": ["Any licensed real estate agent", "A licensee who is a member of NAR and bound by the Code", "A state real estate commissioner", "An unlicensed assistant"],
+        "answer": 1,
+        "explanation": "REALTOR® is a membership designation — a licensee who belongs to NAR and is bound by its Code of Ethics."
+      },
+      {
+        "q": "The Code of Ethics organizes its Articles into how many groups of duties?",
+        "choices": ["Two", "Three", "Five", "Seven"],
+        "answer": 1,
+        "explanation": "Three: Duties to Clients & Customers (1–9), to the Public (10–14), and to REALTORS® (15–17)."
+      }
+    ],
+    "m2": [
+      {
+        "q": "Under Article 1, a REALTOR® must protect the client's interests while:",
+        "choices": ["Concealing adverse facts", "Treating all parties honestly", "Representing both sides secretly", "Avoiding cooperation"],
+        "answer": 1,
+        "explanation": "Article 1 requires protecting the client's interest AND treating all parties honestly."
+      },
+      {
+        "q": "Article 8 requires a REALTOR® to keep client funds:",
+        "choices": ["In the firm's operating account", "In a separate trust/escrow account", "In cash on hand", "In the agent's personal account"],
+        "answer": 1,
+        "explanation": "Article 8 requires client monies to be held in a separate escrow/trust account."
+      },
+      {
+        "q": "Article 2 requires disclosure of known adverse factors but does NOT impose a duty to:",
+        "choices": ["Avoid exaggeration", "Discover latent (hidden) defects", "Disclose pertinent facts", "Be truthful"],
+        "answer": 1,
+        "explanation": "Article 2 prohibits misrepresentation/concealment but does not require discovering latent defects."
+      }
+    ],
+    "m3": [
+      {
+        "q": "Article 10 of the Code addresses:",
+        "choices": ["Escrow handling", "Equal professional service / non-discrimination", "Arbitration", "Advertising fees"],
+        "answer": 1,
+        "explanation": "Article 10 requires equal professional service and prohibits discrimination on protected characteristics."
+      },
+      {
+        "q": "Under Article 13, a REALTOR® must avoid:",
+        "choices": ["Cooperating with other brokers", "The unauthorized practice of law", "Putting agreements in writing", "Disclosing their license status"],
+        "answer": 1,
+        "explanation": "Article 13 prohibits the unauthorized practice of law; refer clients to legal counsel when needed."
+      },
+      {
+        "q": "Article 12 requires that REALTORS® present a true picture in their:",
+        "choices": ["Tax filings", "Advertising and marketing", "Escrow accounts", "Arbitration hearings"],
+        "answer": 1,
+        "explanation": "Article 12 requires honest advertising and disclosure of one's status as a real estate professional."
+      }
+    ],
+    "m4": [
+      {
+        "q": "Article 16 prohibits a REALTOR® from:",
+        "choices": ["Arbitrating disputes", "Interfering with other REALTORS®' exclusive client agreements", "Advertising truthfully", "Holding escrow"],
+        "answer": 1,
+        "explanation": "Article 16 bars interfering with the exclusive representation agreements other REALTORS® hold with clients."
+      },
+      {
+        "q": "Under Article 17, contractual disputes between REALTORS® should generally be resolved by:",
+        "choices": ["Litigation in civil court", "Arbitration through the association", "Ignoring the dispute", "A vote of clients"],
+        "answer": 1,
+        "explanation": "Article 17 directs REALTORS® to arbitrate contractual disputes through the association rather than litigate."
+      },
+      {
+        "q": "Which body initially screens ethics complaints before a hearing?",
+        "choices": ["The Grievance Committee", "The state legislature", "HUD", "The MLS board"],
+        "answer": 0,
+        "explanation": "The Grievance Committee screens complaints; meritorious ones go to a Professional Standards hearing panel."
+      }
+    ]
+  }
+}
