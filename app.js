@@ -20,6 +20,7 @@
   const LS_COURSE = "re_study_last_course";
   const LS_MODULE = "re_study_last_module";   // keyed object: { courseId: moduleId }
   const LS_BEST = "re_study_best_scores";     // keyed: "courseId/moduleId": pct
+  const LS_REVIEWED = "re_study_reviewed";    // keyed: "courseId/moduleId": true
 
   async function loadJSON(path) {
     const res = await fetch(path, { cache: "no-store" });
@@ -146,6 +147,8 @@
   function render() {
     if (!state.course) return;
     syncMixedOption();
+    updateUnitPickerLabels();
+    updateProgress();
     if (state.tab === "read") return renderReader();
     if (state.tab === "summary") return renderSummary();
     if (state.tab === "cards") return renderCards();
@@ -160,8 +163,16 @@
     const paras = (m.body || "")
       .split(/\n+/).filter(Boolean)
       .map((p) => `<p>${escapeHTML(p)}</p>`).join("");
+    const reviewed = isReviewed(state.moduleId);
+    const reviewBtn = `<button class="review-btn ${reviewed ? "done" : ""}" id="review-toggle">
+      ${reviewed ? "✓ Reviewed — tap to undo" : "Mark this unit reviewed"}</button>`;
     view.innerHTML = `<section class="reader">${note}
-      <h2>${escapeHTML(m.title)}</h2>${paras || '<p class="empty">No text for this unit yet.</p>'}</section>`;
+      <h2>${escapeHTML(m.title)}</h2>${paras || '<p class="empty">No text for this unit yet.</p>'}
+      ${reviewBtn}</section>`;
+    $("#review-toggle").addEventListener("click", () => {
+      setReviewed(state.moduleId, !isReviewed(state.moduleId));
+      render();
+    });
   }
 
   /* ---------- Summary ---------- */
@@ -319,6 +330,44 @@
       const k = bestKey();
       if (all[k] == null || pct > all[k]) { all[k] = pct; localStorage.setItem(LS_BEST, JSON.stringify(all)); }
     } catch { /* ignore */ }
+  }
+
+  /* ---------- reviewed tracker ---------- */
+  function readReviewed() {
+    try { return JSON.parse(localStorage.getItem(LS_REVIEWED) || "{}"); }
+    catch { return {}; }
+  }
+  function isReviewed(moduleId) {
+    return !!readReviewed()[`${state.courseId}/${moduleId}`];
+  }
+  function setReviewed(moduleId, val) {
+    try {
+      const all = readReviewed();
+      const k = `${state.courseId}/${moduleId}`;
+      if (val) all[k] = true; else delete all[k];
+      localStorage.setItem(LS_REVIEWED, JSON.stringify(all));
+    } catch { /* ignore */ }
+  }
+  function reviewedCount() {
+    return state.course.modules.filter((m) => isReviewed(m.id)).length;
+  }
+
+  function updateUnitPickerLabels() {
+    const picker = $("#module-picker");
+    state.course.modules.forEach((m) => {
+      const opt = picker.querySelector(`option[value="${m.id}"]`);
+      if (opt) opt.textContent = (isReviewed(m.id) ? "✓ " : "") + m.title;
+    });
+  }
+
+  function updateProgress() {
+    const total = state.course.modules.length;
+    const done = reviewedCount();
+    const wrap = $("#progress");
+    $("#progress-fill").style.width = total ? `${(done / total) * 100}%` : "0%";
+    $("#progress-text").textContent = `${done} / ${total} units reviewed`;
+    wrap.hidden = false;
+    wrap.classList.toggle("complete", done === total && total > 0);
   }
 
   /* ---------- misc ---------- */

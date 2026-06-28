@@ -49,54 +49,366 @@
   ],
   "quiz": {
     "m1": [
-      { "q": "According to the standard control hierarchy, what is the most effective first step for improving indoor air quality?", "choices": ["Running an air purifier", "Source control — removing or sealing the pollutant", "Increasing the thermostat", "Adding more houseplants"], "answer": 1, "explanation": "Source control is the most effective first step, followed by ventilation and then air cleaning." },
-      { "q": "What indoor relative humidity range is generally recommended to discourage mold and dust mites?", "choices": ["Roughly 30–50%", "Roughly 60–80%", "Below 10%", "Exactly 100%"], "answer": 0, "explanation": "Keeping relative humidity around 30–50% discourages mold, dust mites, and bacteria while avoiding excessive dryness." },
-      { "q": "Which of the following is a common source of volatile organic compounds (VOCs) in a home?", "choices": ["Radon from soil", "Paints, cleaners, and new furnishings", "Sunlight through windows", "Hard water"], "answer": 1, "explanation": "VOCs are commonly released by paints, cleaning products, and off-gassing new furnishings and materials." }
+      {
+        "q": "According to the standard control hierarchy, what is the most effective first step for improving indoor air quality?",
+        "choices": [
+          "Running an air purifier",
+          "Source control — removing or sealing the pollutant",
+          "Increasing the thermostat",
+          "Adding more houseplants"
+        ],
+        "answer": 1,
+        "explanation": "Source control is the most effective first step, followed by ventilation and then air cleaning."
+      },
+      {
+        "q": "What indoor relative humidity range is generally recommended to discourage mold and dust mites?",
+        "choices": [
+          "Roughly 30–50%",
+          "Roughly 60–80%",
+          "Below 10%",
+          "Exactly 100%"
+        ],
+        "answer": 0,
+        "explanation": "Keeping relative humidity around 30–50% discourages mold, dust mites, and bacteria while avoiding excessive dryness."
+      },
+      {
+        "q": "Which of the following is a common source of volatile organic compounds (VOCs) in a home?",
+        "choices": [
+          "Radon from soil",
+          "Paints, cleaners, and new furnishings",
+          "Sunlight through windows",
+          "Hard water"
+        ],
+        "answer": 1,
+        "explanation": "VOCs are commonly released by paints, cleaning products, and off-gassing new furnishings and materials."
+      },
+      {
+        "q": "An exhaust fan installed to control moisture and odors in a bathroom should be vented to where?",
+        "choices": [
+          "Into the attic",
+          "To the outdoors",
+          "Into a wall cavity",
+          "Back into the bathroom"
+        ],
+        "answer": 1,
+        "explanation": "Spot exhaust fans should be vented to the outdoors so moisture and pollutants leave the home rather than collecting in the attic or walls."
+      },
+      {
+        "q": "A mechanical system that continuously brings filtered fresh outdoor air into a home is best described as:",
+        "choices": [
+          "Whole-house ventilation",
+          "A dehumidifier",
+          "Source control",
+          "A radon test kit"
+        ],
+        "answer": 0,
+        "explanation": "Whole-house mechanical ventilation supplies fresh outdoor air throughout the home to dilute indoor pollutants."
+      },
+      {
+        "q": "Which biological contaminant commonly worsens indoor air quality and triggers allergy and asthma symptoms?",
+        "choices": [
+          "Carbon monoxide",
+          "Volatile organic compounds",
+          "Dust mites",
+          "Lead solder"
+        ],
+        "answer": 2,
+        "explanation": "Dust mites are a biological contaminant that, along with mold spores and pet dander, commonly aggravates allergies and asthma."
+      }
     ],
     "m2": [
-      { "q": "In what year was lead-based paint banned for residential use in the United States?", "choices": ["1968", "1972", "1978", "1992"], "answer": 2, "explanation": "Lead-based paint was banned for residential use in 1978, so pre-1978 homes may contain it." },
-      { "q": "Under Title X, sellers and landlords of most pre-1978 housing must provide buyers and tenants with:", "choices": ["A free radon test", "The EPA pamphlet \"Protect Your Family from Lead in Your Home\"", "A home warranty", "A pest inspection report"], "answer": 1, "explanation": "Title X requires lead disclosure plus distribution of the EPA \"Protect Your Family from Lead in Your Home\" pamphlet." },
-      { "q": "What is the general rule for intact, undisturbed asbestos-containing material?", "choices": ["Remove it immediately yourself", "Leave it undisturbed", "Paint over it with lead paint", "Sand it smooth"], "answer": 1, "explanation": "Intact asbestos is best left undisturbed; fibers become hazardous only when the material is cut, sanded, or demolished." }
+      {
+        "q": "In what year was lead-based paint banned for residential use in the United States?",
+        "choices": [
+          "1968",
+          "1972",
+          "1978",
+          "1992"
+        ],
+        "answer": 2,
+        "explanation": "Lead-based paint was banned for residential use in 1978, so pre-1978 homes may contain it."
+      },
+      {
+        "q": "Under Title X, sellers and landlords of most pre-1978 housing must provide buyers and tenants with:",
+        "choices": [
+          "A free radon test",
+          "The EPA pamphlet \"Protect Your Family from Lead in Your Home\"",
+          "A home warranty",
+          "A pest inspection report"
+        ],
+        "answer": 1,
+        "explanation": "Title X requires lead disclosure plus distribution of the EPA \"Protect Your Family from Lead in Your Home\" pamphlet."
+      },
+      {
+        "q": "What is the general rule for intact, undisturbed asbestos-containing material?",
+        "choices": [
+          "Remove it immediately yourself",
+          "Leave it undisturbed",
+          "Paint over it with lead paint",
+          "Sand it smooth"
+        ],
+        "answer": 1,
+        "explanation": "Intact asbestos is best left undisturbed; fibers become hazardous only when the material is cut, sanded, or demolished."
+      },
+      {
+        "q": "Under Title X, buyers of most pre-1978 housing must be given how long to conduct a lead-based paint inspection or risk assessment?",
+        "choices": [
+          "3 days",
+          "10 days",
+          "30 days",
+          "90 days"
+        ],
+        "answer": 1,
+        "explanation": "Title X gives buyers a 10-day opportunity to test for lead-based paint and hazards before becoming obligated under the contract."
+      },
+      {
+        "q": "The EPA RRP Rule applies to renovation work in pre-1978 housing and which other category of buildings?",
+        "choices": [
+          "Commercial office towers",
+          "Child-occupied facilities",
+          "Newly constructed homes",
+          "Detached garages only"
+        ],
+        "answer": 1,
+        "explanation": "The RRP Rule covers renovations disturbing paint in pre-1978 housing and child-occupied facilities such as certain daycares and schools."
+      },
+      {
+        "q": "Asbestos fibers in older building materials pose the greatest health risk when they are:",
+        "choices": [
+          "Sealed inside intact floor tile",
+          "Painted over and undisturbed",
+          "Released into the air and inhaled",
+          "Stored in a cool basement"
+        ],
+        "answer": 2,
+        "explanation": "Asbestos becomes hazardous when fibers become airborne and are inhaled, which happens when the material is cut, sanded, or demolished."
+      }
     ],
     "m3": [
-      { "q": "What is the EPA action level for radon in homes?", "choices": ["4 pCi/L", "40 pCi/L", "0.4 pCi/L", "400 pCi/L"], "answer": 0, "explanation": "The EPA recommends action to reduce radon at or above 4 picocuries per liter (4 pCi/L)." },
-      { "q": "Radon is best described as:", "choices": ["A man-made chemical solvent", "A naturally occurring radioactive gas and the second-leading cause of lung cancer", "A type of mold spore", "A combustion byproduct of gas furnaces"], "answer": 1, "explanation": "Radon is a naturally occurring radioactive gas and the second-leading cause of lung cancer after smoking." },
-      { "q": "What is the single most important factor to control in order to prevent mold growth?", "choices": ["Lighting", "Moisture", "Air temperature alone", "Paint color"], "answer": 1, "explanation": "Mold requires moisture to grow, so controlling water and humidity is the key to controlling mold." }
+      {
+        "q": "What is the EPA action level for radon in homes?",
+        "choices": [
+          "4 pCi/L",
+          "40 pCi/L",
+          "0.4 pCi/L",
+          "400 pCi/L"
+        ],
+        "answer": 0,
+        "explanation": "The EPA recommends action to reduce radon at or above 4 picocuries per liter (4 pCi/L)."
+      },
+      {
+        "q": "Radon is best described as:",
+        "choices": [
+          "A man-made chemical solvent",
+          "A naturally occurring radioactive gas and the second-leading cause of lung cancer",
+          "A type of mold spore",
+          "A combustion byproduct of gas furnaces"
+        ],
+        "answer": 1,
+        "explanation": "Radon is a naturally occurring radioactive gas and the second-leading cause of lung cancer after smoking."
+      },
+      {
+        "q": "What is the single most important factor to control in order to prevent mold growth?",
+        "choices": [
+          "Lighting",
+          "Moisture",
+          "Air temperature alone",
+          "Paint color"
+        ],
+        "answer": 1,
+        "explanation": "Mold requires moisture to grow, so controlling water and humidity is the key to controlling mold."
+      },
+      {
+        "q": "Radon enters a home primarily through which pathway?",
+        "choices": [
+          "Cracks in the foundation and slab from the soil",
+          "The kitchen exhaust fan",
+          "Tap water aerators",
+          "Attic roof vents"
+        ],
+        "answer": 0,
+        "explanation": "Radon seeps up from soil and rock and enters through cracks in foundations, slabs, and gaps around pipes."
+      },
+      {
+        "q": "The most common radon mitigation method vents soil gas using which technique?",
+        "choices": [
+          "Whole-house humidification",
+          "Sub-slab depressurization",
+          "Adding houseplants",
+          "Sealing all windows shut"
+        ],
+        "answer": 1,
+        "explanation": "Sub-slab depressurization draws soil gas from beneath the slab and vents it above the roofline, the most common radon mitigation approach."
+      },
+      {
+        "q": "Besides moisture, mold also requires which of the following to grow?",
+        "choices": [
+          "Direct sunlight",
+          "Organic material such as drywall, wood, or paper",
+          "High carbon monoxide levels",
+          "Lead-based paint"
+        ],
+        "answer": 1,
+        "explanation": "Mold needs water plus organic material like drywall, wood, or paper, so controlling moisture on those surfaces controls mold."
+      }
     ],
     "m4": [
-      { "q": "Where are carbon monoxide detectors typically required to be installed?", "choices": ["Only in the garage", "Near sleeping areas", "Inside the refrigerator", "On the roof"], "answer": 1, "explanation": "CO alarms are commonly required near sleeping areas so occupants are warned while asleep." },
-      { "q": "Owners of homes served by a private well are generally responsible for:", "choices": ["Nothing — the EPA tests it for them", "Periodic testing, at minimum annually for bacteria and nitrates", "Testing only once at construction", "Testing only if they smell something"], "answer": 1, "explanation": "Private wells are not regulated like public systems, so owners should test at least annually for bacteria and nitrates." },
-      { "q": "Integrated Pest Management (IPM) emphasizes which approach?", "choices": ["Heavy routine pesticide spraying", "Prevention first, with pesticides as a targeted last resort", "Ignoring pests until structural failure", "Relying only on chemical foggers"], "answer": 1, "explanation": "IPM prioritizes prevention — sealing entry points and removing food/water — and uses pesticides only as a last resort." }
+      {
+        "q": "Where are carbon monoxide detectors typically required to be installed?",
+        "choices": [
+          "Only in the garage",
+          "Near sleeping areas",
+          "Inside the refrigerator",
+          "On the roof"
+        ],
+        "answer": 1,
+        "explanation": "CO alarms are commonly required near sleeping areas so occupants are warned while asleep."
+      },
+      {
+        "q": "Owners of homes served by a private well are generally responsible for:",
+        "choices": [
+          "Nothing — the EPA tests it for them",
+          "Periodic testing, at minimum annually for bacteria and nitrates",
+          "Testing only once at construction",
+          "Testing only if they smell something"
+        ],
+        "answer": 1,
+        "explanation": "Private wells are not regulated like public systems, so owners should test at least annually for bacteria and nitrates."
+      },
+      {
+        "q": "Integrated Pest Management (IPM) emphasizes which approach?",
+        "choices": [
+          "Heavy routine pesticide spraying",
+          "Prevention first, with pesticides as a targeted last resort",
+          "Ignoring pests until structural failure",
+          "Relying only on chemical foggers"
+        ],
+        "answer": 1,
+        "explanation": "IPM prioritizes prevention — sealing entry points and removing food/water — and uses pesticides only as a last resort."
+      },
+      {
+        "q": "Carbon monoxide is produced in a home by which of the following processes?",
+        "choices": [
+          "Photosynthesis from houseplants",
+          "Incomplete combustion of fuels",
+          "Evaporation of water",
+          "Decay of organic matter in soil"
+        ],
+        "answer": 1,
+        "explanation": "Carbon monoxide results from the incomplete combustion of fuels in appliances such as furnaces, water heaters, and gas ranges."
+      },
+      {
+        "q": "A common remedy for lead entering drinking water through a home's plumbing is:",
+        "choices": [
+          "Replacing lead service lines and using corrosion control",
+          "Boiling the water to remove the lead",
+          "Adding a water softener",
+          "Installing a radon mitigation system"
+        ],
+        "answer": 0,
+        "explanation": "Lead in water is commonly addressed by replacing lead service lines and applying corrosion control, since boiling does not remove lead."
+      },
+      {
+        "q": "Wood-destroying organisms most often associated with serious structural damage in a home are:",
+        "choices": [
+          "Dust mites",
+          "Mold spores",
+          "Termites",
+          "Radon particles"
+        ],
+        "answer": 2,
+        "explanation": "Termites are the most notable wood-destroying organisms and can cause serious structural damage, so many transactions include a WDO inspection."
+      }
     ]
   },
   "flashcards": {
     "m1": [
-      { "front": "What does IAQ stand for?", "back": "Indoor Air Quality — the condition of the air inside a home and its effect on health and comfort." },
-      { "front": "IAQ control hierarchy", "back": "Source control first, then ventilation, then air cleaning." },
-      { "front": "Recommended indoor humidity range", "back": "Roughly 30–50% relative humidity to discourage mold, dust mites, and bacteria." },
-      { "front": "Common indoor pollutants", "back": "Combustion byproducts, VOCs, biological contaminants (mold, dust mites, dander), and radon." },
-      { "front": "Why does IAQ matter?", "back": "People spend most of their time indoors, so indoor pollutants can significantly affect health." }
+      {
+        "front": "What does IAQ stand for?",
+        "back": "Indoor Air Quality — the condition of the air inside a home and its effect on health and comfort."
+      },
+      {
+        "front": "IAQ control hierarchy",
+        "back": "Source control first, then ventilation, then air cleaning."
+      },
+      {
+        "front": "Recommended indoor humidity range",
+        "back": "Roughly 30–50% relative humidity to discourage mold, dust mites, and bacteria."
+      },
+      {
+        "front": "Common indoor pollutants",
+        "back": "Combustion byproducts, VOCs, biological contaminants (mold, dust mites, dander), and radon."
+      },
+      {
+        "front": "Why does IAQ matter?",
+        "back": "People spend most of their time indoors, so indoor pollutants can significantly affect health."
+      }
     ],
     "m2": [
-      { "front": "Year lead-based paint was banned for residential use", "back": "1978 — homes built before then may contain lead-based paint." },
-      { "front": "Title X", "back": "Residential Lead-Based Paint Hazard Reduction Act of 1992 — requires lead disclosure for most pre-1978 housing." },
-      { "front": "Required EPA lead pamphlet", "back": "\"Protect Your Family from Lead in Your Home.\"" },
-      { "front": "EPA RRP Rule", "back": "Renovation, Repair, and Painting Rule — certified firms must use lead-safe practices when disturbing paint in pre-1978 housing." },
-      { "front": "Rule for intact asbestos", "back": "Leave it undisturbed; fibers become hazardous only when the material is cut, sanded, or demolished." }
+      {
+        "front": "Year lead-based paint was banned for residential use",
+        "back": "1978 — homes built before then may contain lead-based paint."
+      },
+      {
+        "front": "Title X",
+        "back": "Residential Lead-Based Paint Hazard Reduction Act of 1992 — requires lead disclosure for most pre-1978 housing."
+      },
+      {
+        "front": "Required EPA lead pamphlet",
+        "back": "\"Protect Your Family from Lead in Your Home.\""
+      },
+      {
+        "front": "EPA RRP Rule",
+        "back": "Renovation, Repair, and Painting Rule — certified firms must use lead-safe practices when disturbing paint in pre-1978 housing."
+      },
+      {
+        "front": "Rule for intact asbestos",
+        "back": "Leave it undisturbed; fibers become hazardous only when the material is cut, sanded, or demolished."
+      }
     ],
     "m3": [
-      { "front": "What is radon?", "back": "A naturally occurring, colorless, odorless radioactive gas from soil; the second-leading cause of lung cancer." },
-      { "front": "EPA radon action level", "back": "4 pCi/L (picocuries per liter)." },
-      { "front": "Common radon mitigation method", "back": "Sub-slab depressurization that vents soil gas above the roofline." },
-      { "front": "What drives mold growth?", "back": "Moisture — mold needs water plus organic material; control moisture to control mold." },
-      { "front": "First step in mold remediation", "back": "Fix the underlying water/moisture source before cleaning or removing materials." }
+      {
+        "front": "What is radon?",
+        "back": "A naturally occurring, colorless, odorless radioactive gas from soil; the second-leading cause of lung cancer."
+      },
+      {
+        "front": "EPA radon action level",
+        "back": "4 pCi/L (picocuries per liter)."
+      },
+      {
+        "front": "Common radon mitigation method",
+        "back": "Sub-slab depressurization that vents soil gas above the roofline."
+      },
+      {
+        "front": "What drives mold growth?",
+        "back": "Moisture — mold needs water plus organic material; control moisture to control mold."
+      },
+      {
+        "front": "First step in mold remediation",
+        "back": "Fix the underlying water/moisture source before cleaning or removing materials."
+      }
     ],
     "m4": [
-      { "front": "Source of carbon monoxide in homes", "back": "Incomplete combustion from furnaces, water heaters, gas ranges, fireplaces, and attached garages." },
-      { "front": "Key CO safeguard", "back": "CO detectors/alarms, typically installed near sleeping areas." },
-      { "front": "Lead in drinking water", "back": "Often comes from lead service lines and old lead solder, especially in older homes." },
-      { "front": "Private well testing", "back": "Owner's responsibility — at least annually for bacteria (coliform) and nitrates." },
-      { "front": "IPM and termites", "back": "Integrated Pest Management prevents pests first; termites (WDOs) threaten structures and are commonly inspected." }
+      {
+        "front": "Source of carbon monoxide in homes",
+        "back": "Incomplete combustion from furnaces, water heaters, gas ranges, fireplaces, and attached garages."
+      },
+      {
+        "front": "Key CO safeguard",
+        "back": "CO detectors/alarms, typically installed near sleeping areas."
+      },
+      {
+        "front": "Lead in drinking water",
+        "back": "Often comes from lead service lines and old lead solder, especially in older homes."
+      },
+      {
+        "front": "Private well testing",
+        "back": "Owner's responsibility — at least annually for bacteria (coliform) and nitrates."
+      },
+      {
+        "front": "IPM and termites",
+        "back": "Integrated Pest Management prevents pests first; termites (WDOs) threaten structures and are commonly inspected."
+      }
     ]
   }
 }

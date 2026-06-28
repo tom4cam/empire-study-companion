@@ -49,54 +49,366 @@
   ],
   "quiz": {
     "m1": [
-      { "q": "The Utah Division of Real Estate operates as part of which state department?", "choices": ["Utah Department of Commerce", "Utah Department of Workforce Services", "Utah Department of Housing", "Utah Department of Justice"], "answer": 0, "explanation": "The Division of Real Estate is housed within the Utah Department of Commerce." },
-      { "q": "Which licensee is responsible for supervising affiliated agents and the firm's trust accounts?", "choices": ["A sales agent", "An associate broker", "The principal broker", "The state commissioner"], "answer": 2, "explanation": "The principal broker is responsible for the brokerage, including supervising agents and overseeing trust accounts." },
-      { "q": "Which body adopts rules and acts on Utah licensing and disciplinary matters alongside the Division?", "choices": ["The Utah Real Estate Commission", "The local MLS board", "The county recorder", "HUD"], "answer": 0, "explanation": "The Utah Real Estate Commission adopts rules, sets policy, and acts on licensing and disciplinary matters." }
+      {
+        "q": "The Utah Division of Real Estate operates as part of which state department?",
+        "choices": [
+          "Utah Department of Commerce",
+          "Utah Department of Workforce Services",
+          "Utah Department of Housing",
+          "Utah Department of Justice"
+        ],
+        "answer": 0,
+        "explanation": "The Division of Real Estate is housed within the Utah Department of Commerce."
+      },
+      {
+        "q": "Which licensee is responsible for supervising affiliated agents and the firm's trust accounts?",
+        "choices": [
+          "A sales agent",
+          "An associate broker",
+          "The principal broker",
+          "The state commissioner"
+        ],
+        "answer": 2,
+        "explanation": "The principal broker is responsible for the brokerage, including supervising agents and overseeing trust accounts."
+      },
+      {
+        "q": "Which body adopts rules and acts on Utah licensing and disciplinary matters alongside the Division?",
+        "choices": [
+          "The Utah Real Estate Commission",
+          "The local MLS board",
+          "The county recorder",
+          "HUD"
+        ],
+        "answer": 0,
+        "explanation": "The Utah Real Estate Commission adopts rules, sets policy, and acts on licensing and disciplinary matters."
+      },
+      {
+        "q": "Which of the following functions does the Utah Division of Real Estate perform?",
+        "choices": [
+          "Setting mortgage interest rates for buyers",
+          "Investigating complaints and maintaining licensee records",
+          "Issuing building permits for new homes",
+          "Appraising property for county tax rolls"
+        ],
+        "answer": 1,
+        "explanation": "The Division issues and renews licenses, keeps licensee records, and investigates complaints against licensees."
+      },
+      {
+        "q": "A licensee who has met broker qualifications but still practices under a principal broker holds which status?",
+        "choices": [
+          "Sales agent",
+          "Associate broker",
+          "Principal broker",
+          "Unlicensed assistant"
+        ],
+        "answer": 1,
+        "explanation": "An associate broker has met broker qualifications yet continues to work under a principal broker rather than running a firm."
+      },
+      {
+        "q": "Which statement about Utah continuing-education and renewal requirements is most accurate?",
+        "choices": [
+          "The exact hour totals and cycles are fixed in the state constitution",
+          "There are no continuing-education requirements for active licensees",
+          "Hour totals and cycles are set by rule and can change, so they should be verified with the Division",
+          "Renewal is automatic and never requires any coursework"
+        ],
+        "answer": 2,
+        "explanation": "CE hour totals and renewal cycles are set by administrative rule and change over time, so current requirements should be confirmed with the Division."
+      }
     ],
     "m2": [
-      { "q": "In Utah, when a single brokerage represents both the buyer and the seller, the relationship is called:", "choices": ["Designated agency", "Limited agency", "Sub-agency", "Transactional brokerage"], "answer": 1, "explanation": "Utah uses 'limited agency' when one brokerage represents both parties in the same transaction." },
-      { "q": "Under limited agency, the brokerage must generally:", "choices": ["Favor the seller's interests", "Obtain informed written consent and stay neutral on conflicting terms", "Keep the arrangement undisclosed", "Disclose each party's confidential information to the other"], "answer": 1, "explanation": "Limited agency requires both parties' informed written consent and neutrality on issues like price and terms." },
-      { "q": "Who is responsible for ensuring agency relationships are properly disclosed and documented at a firm?", "choices": ["The principal broker", "The buyer", "The title company", "The appraiser"], "answer": 0, "explanation": "The principal broker must supervise agents to ensure agency relationships are established, disclosed, and documented." }
+      {
+        "q": "In Utah, when a single brokerage represents both the buyer and the seller, the relationship is called:",
+        "choices": [
+          "Designated agency",
+          "Limited agency",
+          "Sub-agency",
+          "Transactional brokerage"
+        ],
+        "answer": 1,
+        "explanation": "Utah uses 'limited agency' when one brokerage represents both parties in the same transaction."
+      },
+      {
+        "q": "Under limited agency, the brokerage must generally:",
+        "choices": [
+          "Favor the seller's interests",
+          "Obtain informed written consent and stay neutral on conflicting terms",
+          "Keep the arrangement undisclosed",
+          "Disclose each party's confidential information to the other"
+        ],
+        "answer": 1,
+        "explanation": "Limited agency requires both parties' informed written consent and neutrality on issues like price and terms."
+      },
+      {
+        "q": "Who is responsible for ensuring agency relationships are properly disclosed and documented at a firm?",
+        "choices": [
+          "The principal broker",
+          "The buyer",
+          "The title company",
+          "The appraiser"
+        ],
+        "answer": 0,
+        "explanation": "The principal broker must supervise agents to ensure agency relationships are established, disclosed, and documented."
+      },
+      {
+        "q": "Which of the following is a core fiduciary-type duty a licensee owes a client?",
+        "choices": [
+          "Confidentiality",
+          "Guaranteeing the property will appreciate",
+          "Paying the client's closing costs",
+          "Selecting the client's lender"
+        ],
+        "answer": 0,
+        "explanation": "Core agency duties include loyalty, confidentiality, reasonable care, and full disclosure to the client."
+      },
+      {
+        "q": "Under Utah limited agency, on matters where the buyer's and seller's interests conflict, the brokerage must:",
+        "choices": [
+          "Advocate aggressively for the seller",
+          "Remain neutral",
+          "Advocate aggressively for the buyer",
+          "Withdraw from the transaction immediately"
+        ],
+        "answer": 1,
+        "explanation": "Limited agency requires the brokerage to stay neutral on conflicting issues such as price and terms."
+      },
+      {
+        "q": "Agency disclosure to consumers is generally expected to occur:",
+        "choices": [
+          "Only at the closing table",
+          "Only if the client requests it in writing",
+          "Early in the relationship and documented",
+          "After the transaction has closed"
+        ],
+        "answer": 2,
+        "explanation": "Agency disclosure is generally made early in the relationship and documented so consumers understand whom the agent represents."
+      }
     ],
     "m3": [
-      { "q": "For most Utah residential resales, licensees primarily use:", "choices": ["A custom attorney-drafted contract", "A state-approved Real Estate Purchase Contract (REPC)", "An oral agreement", "A federal purchase form"], "answer": 1, "explanation": "Utah practitioners use a state-approved REPC, filling in blanks and attaching approved addenda." },
-      { "q": "Which of the following is a standard REPC deadline?", "choices": ["The Due Diligence deadline", "The eviction deadline", "The zoning-appeal deadline", "The tax-protest deadline"], "answer": 0, "explanation": "The REPC includes the Due Diligence deadline, the buyer's window to investigate the property." },
-      { "q": "Why do licensees use approved addenda instead of drafting their own contract language?", "choices": ["It is cheaper", "To help avoid the unauthorized practice of law", "Because clients prefer it", "It is required by the IRS"], "answer": 1, "explanation": "Using approved forms and addenda helps licensees avoid the unauthorized practice of law." }
+      {
+        "q": "For most Utah residential resales, licensees primarily use:",
+        "choices": [
+          "A custom attorney-drafted contract",
+          "A state-approved Real Estate Purchase Contract (REPC)",
+          "An oral agreement",
+          "A federal purchase form"
+        ],
+        "answer": 1,
+        "explanation": "Utah practitioners use a state-approved REPC, filling in blanks and attaching approved addenda."
+      },
+      {
+        "q": "Which of the following is a standard REPC deadline?",
+        "choices": [
+          "The Due Diligence deadline",
+          "The eviction deadline",
+          "The zoning-appeal deadline",
+          "The tax-protest deadline"
+        ],
+        "answer": 0,
+        "explanation": "The REPC includes the Due Diligence deadline, the buyer's window to investigate the property."
+      },
+      {
+        "q": "Why do licensees use approved addenda instead of drafting their own contract language?",
+        "choices": [
+          "It is cheaper",
+          "To help avoid the unauthorized practice of law",
+          "Because clients prefer it",
+          "It is required by the IRS"
+        ],
+        "answer": 1,
+        "explanation": "Using approved forms and addenda helps licensees avoid the unauthorized practice of law."
+      },
+      {
+        "q": "The Settlement deadline in the REPC refers to which event?",
+        "choices": [
+          "Closing of the transaction",
+          "The buyer's property inspection",
+          "Delivery of seller disclosures",
+          "Loan pre-approval"
+        ],
+        "answer": 0,
+        "explanation": "The Settlement deadline is the closing date set in the REPC."
+      },
+      {
+        "q": "What is the primary purpose of the Seller Disclosure deadline?",
+        "choices": [
+          "The date the buyer must apply for financing",
+          "The date by which the seller delivers required disclosures to the buyer",
+          "The date the appraisal must be completed",
+          "The date the deed is recorded"
+        ],
+        "answer": 1,
+        "explanation": "The Seller Disclosure deadline is the date by which the seller must deliver required property disclosures to the buyer."
+      },
+      {
+        "q": "What generally happens when a party misses a contractual deadline in the REPC?",
+        "choices": [
+          "Nothing, because the deadlines are only suggestions",
+          "It can carry contractual consequences for the responsible party",
+          "The contract automatically extends 30 days",
+          "The Division voids the transaction"
+        ],
+        "answer": 1,
+        "explanation": "Each REPC deadline carries consequences if missed, so accurate dates and prompt communication are essential."
+      }
     ],
     "m4": [
-      { "q": "Earnest money and other client funds held by a brokerage must be kept:", "choices": ["In the broker's personal account", "In a separate trust account, not commingled with operating funds", "In cash in the office safe", "In the listing agent's account"], "answer": 1, "explanation": "Client funds must be held in a separate trust account and never commingled with the broker's own funds." },
-      { "q": "Which is a common Utah license-law violation?", "choices": ["Keeping accurate records", "Disclosing agency relationships", "Commingling or mishandling trust funds", "Supervising agents closely"], "answer": 2, "explanation": "Commingling or mishandling trust funds is a frequent and serious license-law violation." },
-      { "q": "The Division's administrative rules governing trust accounts and recordkeeping are found in which rule series?", "choices": ["The R162 series", "The Title 24 series", "The OSHA series", "The Article 9 series"], "answer": 0, "explanation": "The R162 administrative rule series governs trust accounts and recordkeeping — verify the current version with the Division." }
+      {
+        "q": "Earnest money and other client funds held by a brokerage must be kept:",
+        "choices": [
+          "In the broker's personal account",
+          "In a separate trust account, not commingled with operating funds",
+          "In cash in the office safe",
+          "In the listing agent's account"
+        ],
+        "answer": 1,
+        "explanation": "Client funds must be held in a separate trust account and never commingled with the broker's own funds."
+      },
+      {
+        "q": "Which is a common Utah license-law violation?",
+        "choices": [
+          "Keeping accurate records",
+          "Disclosing agency relationships",
+          "Commingling or mishandling trust funds",
+          "Supervising agents closely"
+        ],
+        "answer": 2,
+        "explanation": "Commingling or mishandling trust funds is a frequent and serious license-law violation."
+      },
+      {
+        "q": "The Division's administrative rules governing trust accounts and recordkeeping are found in which rule series?",
+        "choices": [
+          "The R162 series",
+          "The Title 24 series",
+          "The OSHA series",
+          "The Article 9 series"
+        ],
+        "answer": 0,
+        "explanation": "The R162 administrative rule series governs trust accounts and recordkeeping — verify the current version with the Division."
+      },
+      {
+        "q": "The principle that a broker may never mix client funds with the brokerage's own operating money is known as the prohibition on:",
+        "choices": [
+          "Commingling",
+          "Subordination",
+          "Novation",
+          "Escheat"
+        ],
+        "answer": 0,
+        "explanation": "Mixing client trust funds with the broker's own funds is commingling, which is prohibited."
+      },
+      {
+        "q": "Which practice best protects a brokerage during a Division trust-account audit?",
+        "choices": [
+          "Destroying records after each closing",
+          "Maintaining ledgers, reconciliations, and a clear audit trail",
+          "Holding earnest money in cash",
+          "Combining all client funds into the operating account"
+        ],
+        "answer": 1,
+        "explanation": "Accurate ledgers, reconciliations, and a clear audit trail protect consumers and stand up to Division audits."
+      },
+      {
+        "q": "Who is ultimately responsible for how trust funds are received, deposited, held, and disbursed at a brokerage?",
+        "choices": [
+          "The buyer",
+          "The principal broker",
+          "The title insurer",
+          "The Real Estate Commission"
+        ],
+        "answer": 1,
+        "explanation": "The principal broker is ultimately responsible for the handling of the firm's trust funds."
+      }
     ]
   },
   "flashcards": {
     "m1": [
-      { "front": "What department houses the Utah Division of Real Estate?", "back": "The Utah Department of Commerce." },
-      { "front": "Role of the Utah Real Estate Commission", "back": "Appointed body that adopts rules, sets policy, and acts on licensing and disciplinary matters." },
-      { "front": "Utah residential license categories", "back": "Sales agent and associate broker (both work under a principal broker) and principal broker (runs the firm)." },
-      { "front": "Who supervises agents and trust accounts?", "back": "The principal broker." },
-      { "front": "Division's disciplinary authority", "back": "Can investigate and impose education, fines, probation, suspension, or revocation." }
+      {
+        "front": "What department houses the Utah Division of Real Estate?",
+        "back": "The Utah Department of Commerce."
+      },
+      {
+        "front": "Role of the Utah Real Estate Commission",
+        "back": "Appointed body that adopts rules, sets policy, and acts on licensing and disciplinary matters."
+      },
+      {
+        "front": "Utah residential license categories",
+        "back": "Sales agent and associate broker (both work under a principal broker) and principal broker (runs the firm)."
+      },
+      {
+        "front": "Who supervises agents and trust accounts?",
+        "back": "The principal broker."
+      },
+      {
+        "front": "Division's disciplinary authority",
+        "back": "Can investigate and impose education, fines, probation, suspension, or revocation."
+      }
     ],
     "m2": [
-      { "front": "Limited agency", "back": "Utah's approach when one brokerage represents both buyer and seller; requires informed written consent and neutrality." },
-      { "front": "Core agency duties", "back": "Loyalty, confidentiality, reasonable care, and full disclosure to the client." },
-      { "front": "Agency disclosure obligation", "back": "Licensees must disclose whom they represent so consumers understand the relationship." },
-      { "front": "What is limited under limited agency?", "back": "Duties tied to confidential negotiating information and advocacy on conflicting terms like price." },
-      { "front": "Broker's supervisory duty in agency", "back": "The principal broker ensures agency relationships are established, disclosed, and documented." }
+      {
+        "front": "Limited agency",
+        "back": "Utah's approach when one brokerage represents both buyer and seller; requires informed written consent and neutrality."
+      },
+      {
+        "front": "Core agency duties",
+        "back": "Loyalty, confidentiality, reasonable care, and full disclosure to the client."
+      },
+      {
+        "front": "Agency disclosure obligation",
+        "back": "Licensees must disclose whom they represent so consumers understand the relationship."
+      },
+      {
+        "front": "What is limited under limited agency?",
+        "back": "Duties tied to confidential negotiating information and advocacy on conflicting terms like price."
+      },
+      {
+        "front": "Broker's supervisory duty in agency",
+        "back": "The principal broker ensures agency relationships are established, disclosed, and documented."
+      }
     ],
     "m3": [
-      { "front": "REPC", "back": "Utah's state-approved Real Estate Purchase Contract used for most residential resales." },
-      { "front": "Seller Disclosure deadline", "back": "Date by which the seller must deliver required property disclosures to the buyer." },
-      { "front": "Due Diligence deadline", "back": "The buyer's window to investigate the property's condition and suitability." },
-      { "front": "Financing & Appraisal deadline", "back": "Deadline tied to the buyer's loan approval and the property's appraisal." },
-      { "front": "Settlement deadline", "back": "The closing date set in the REPC." }
+      {
+        "front": "REPC",
+        "back": "Utah's state-approved Real Estate Purchase Contract used for most residential resales."
+      },
+      {
+        "front": "Seller Disclosure deadline",
+        "back": "Date by which the seller must deliver required property disclosures to the buyer."
+      },
+      {
+        "front": "Due Diligence deadline",
+        "back": "The buyer's window to investigate the property's condition and suitability."
+      },
+      {
+        "front": "Financing & Appraisal deadline",
+        "back": "Deadline tied to the buyer's loan approval and the property's appraisal."
+      },
+      {
+        "front": "Settlement deadline",
+        "back": "The closing date set in the REPC."
+      }
     ],
     "m4": [
-      { "front": "Trust account", "back": "A separate account holding client/earnest-money funds, never commingled with the broker's own money." },
-      { "front": "Commingling", "back": "Improperly mixing client funds with the broker's operating funds — a common violation." },
-      { "front": "Recordkeeping duty", "back": "Maintain accurate trust and transaction records and retain them for the period set by rule." },
-      { "front": "Common license-law violations", "back": "Commingling, failure to disclose agency, unlicensed activity, misrepresentation, advertising errors, weak supervision." },
-      { "front": "R162 rules", "back": "Division administrative rule series governing trust accounts and recordkeeping; updated periodically — verify current version." }
+      {
+        "front": "Trust account",
+        "back": "A separate account holding client/earnest-money funds, never commingled with the broker's own money."
+      },
+      {
+        "front": "Commingling",
+        "back": "Improperly mixing client funds with the broker's operating funds — a common violation."
+      },
+      {
+        "front": "Recordkeeping duty",
+        "back": "Maintain accurate trust and transaction records and retain them for the period set by rule."
+      },
+      {
+        "front": "Common license-law violations",
+        "back": "Commingling, failure to disclose agency, unlicensed activity, misrepresentation, advertising errors, weak supervision."
+      },
+      {
+        "front": "R162 rules",
+        "back": "Division administrative rule series governing trust accounts and recordkeeping; updated periodically — verify current version."
+      }
     ]
   }
 }

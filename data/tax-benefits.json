@@ -49,54 +49,366 @@
   ],
   "quiz": {
     "m1": [
-      { "q": "Which of the following is generally NOT taxable rental income when received?", "choices": ["Advance rent paid by a tenant", "A refundable security deposit you intend to return", "A payment from a tenant to cancel a lease", "The value of services a tenant provides in place of rent"], "answer": 1, "explanation": "A refundable security deposit is not income when received; it becomes income only if you keep it." },
-      { "q": "Which expense must be capitalized and depreciated rather than deducted in the current year?", "choices": ["Repainting a worn wall", "Fixing a leaky faucet", "Installing a brand-new roof", "Paying the monthly water bill"], "answer": 2, "explanation": "A new roof is a capital improvement that betters the property, so it must be capitalized and depreciated." },
-      { "q": "Which of these is a currently deductible operating expense for a rental?", "choices": ["Property-management fees", "The cost of the land", "An addition that adds a new bedroom", "Repaving and expanding the driveway"], "answer": 0, "explanation": "Property-management fees are an ordinary operating expense deductible in the year incurred; the others are capital or non-depreciable costs." }
+      {
+        "q": "Which of the following is generally NOT taxable rental income when received?",
+        "choices": [
+          "Advance rent paid by a tenant",
+          "A refundable security deposit you intend to return",
+          "A payment from a tenant to cancel a lease",
+          "The value of services a tenant provides in place of rent"
+        ],
+        "answer": 1,
+        "explanation": "A refundable security deposit is not income when received; it becomes income only if you keep it."
+      },
+      {
+        "q": "Which expense must be capitalized and depreciated rather than deducted in the current year?",
+        "choices": [
+          "Repainting a worn wall",
+          "Fixing a leaky faucet",
+          "Installing a brand-new roof",
+          "Paying the monthly water bill"
+        ],
+        "answer": 2,
+        "explanation": "A new roof is a capital improvement that betters the property, so it must be capitalized and depreciated."
+      },
+      {
+        "q": "Which of these is a currently deductible operating expense for a rental?",
+        "choices": [
+          "Property-management fees",
+          "The cost of the land",
+          "An addition that adds a new bedroom",
+          "Repaving and expanding the driveway"
+        ],
+        "answer": 0,
+        "explanation": "Property-management fees are an ordinary operating expense deductible in the year incurred; the others are capital or non-depreciable costs."
+      },
+      {
+        "q": "A landlord receives a $1,200 security deposit that will be refunded to the tenant at the end of the lease if no damage occurs. How is this deposit treated in the year received?",
+        "choices": [
+          "It is not taxable rental income because it is held as a refundable deposit",
+          "It is fully taxable as rental income in the year received",
+          "It is taxable only to the extent it exceeds one month's rent",
+          "It is treated as a nontaxable loan and never reported"
+        ],
+        "answer": 0,
+        "explanation": "A refundable security deposit the landlord intends to return is not income when received; it becomes income only if kept (e.g., applied to unpaid rent or damages)."
+      },
+      {
+        "q": "Which of the following expenditures is a deductible repair rather than a capital improvement?",
+        "choices": [
+          "Replacing the entire roof of the rental house",
+          "Adding a new central air-conditioning system",
+          "Fixing a leaking faucet and patching a small section of drywall",
+          "Building a new attached garage"
+        ],
+        "answer": 2,
+        "explanation": "Routine fixes that keep the property in ordinary operating condition, like repairing a faucet, are currently deductible repairs, while items that add value or prolong useful life must be capitalized."
+      },
+      {
+        "q": "A tenant pays the landlord's water bill directly and deducts that amount from the rent. How should the landlord treat the payment of that expense?",
+        "choices": [
+          "The amount is ignored because the tenant paid it, not the landlord",
+          "The landlord includes the amount as rental income and may deduct it as a utility expense",
+          "The landlord deducts it but does not report any income",
+          "The landlord reports it as a tax-free reimbursement"
+        ],
+        "answer": 1,
+        "explanation": "When a tenant pays an expense in lieu of rent, the landlord must include that amount in rental income and may then deduct the same amount as the related operating expense."
+      }
     ],
     "m2": [
-      { "q": "Over what recovery period is residential rental property depreciated under MACRS?", "choices": ["15 years", "27.5 years", "39 years", "40 years"], "answer": 1, "explanation": "Residential rental property uses a 27.5-year straight-line recovery period under MACRS (39 years is for commercial)." },
-      { "q": "Which portion of a rental purchase generally CANNOT be depreciated?", "choices": ["The building", "Built-in appliances", "The land", "A detached garage"], "answer": 2, "explanation": "Land does not wear out or become obsolete, so it is never depreciable." },
-      { "q": "Depreciation on a rental begins when the property is:", "choices": ["Purchased and the deed is recorded", "Placed in service (ready and available to rent)", "First advertised for sale", "Fully paid off"], "answer": 1, "explanation": "Depreciation starts when the property is placed in service — ready and available to rent — not necessarily at purchase or occupancy." }
+      {
+        "q": "Over what recovery period is residential rental property depreciated under MACRS?",
+        "choices": [
+          "15 years",
+          "27.5 years",
+          "39 years",
+          "40 years"
+        ],
+        "answer": 1,
+        "explanation": "Residential rental property uses a 27.5-year straight-line recovery period under MACRS (39 years is for commercial)."
+      },
+      {
+        "q": "Which portion of a rental purchase generally CANNOT be depreciated?",
+        "choices": [
+          "The building",
+          "Built-in appliances",
+          "The land",
+          "A detached garage"
+        ],
+        "answer": 2,
+        "explanation": "Land does not wear out or become obsolete, so it is never depreciable."
+      },
+      {
+        "q": "Depreciation on a rental begins when the property is:",
+        "choices": [
+          "Purchased and the deed is recorded",
+          "Placed in service (ready and available to rent)",
+          "First advertised for sale",
+          "Fully paid off"
+        ],
+        "answer": 1,
+        "explanation": "Depreciation starts when the property is placed in service — ready and available to rent — not necessarily at purchase or occupancy."
+      },
+      {
+        "q": "A residential rental building (excluding land) has a depreciable basis of $275,000. What is the approximate annual straight-line MACRS depreciation deduction once fully placed in service?",
+        "choices": [
+          "$27,500",
+          "$11,000",
+          "$10,000",
+          "$13,750"
+        ],
+        "answer": 2,
+        "explanation": "Residential rental property is depreciated straight-line over 27.5 years, so $275,000 / 27.5 = $10,000 per year."
+      },
+      {
+        "q": "Under what convention is residential rental real property generally treated as placed in service for MACRS depreciation purposes?",
+        "choices": [
+          "Half-year convention",
+          "Mid-quarter convention",
+          "Mid-month convention",
+          "Full-month convention"
+        ],
+        "answer": 2,
+        "explanation": "Real property under MACRS uses the mid-month convention, treating it as placed in service at the midpoint of the month regardless of the actual date."
+      },
+      {
+        "q": "An investor buys a rental property for $400,000, with the land valued at $100,000 and the building at $300,000. What amount is subject to depreciation?",
+        "choices": [
+          "$400,000, the full purchase price",
+          "$300,000, the building portion only",
+          "$100,000, the land portion only",
+          "$200,000, half of the purchase price"
+        ],
+        "answer": 1,
+        "explanation": "Land is not depreciable, so only the building's allocated basis of $300,000 may be depreciated."
+      }
     ],
     "m3": [
-      { "q": "Rental real estate is generally classified for tax purposes as a:", "choices": ["Passive activity", "Portfolio investment", "Tax-exempt activity", "Non-reportable activity"], "answer": 0, "explanation": "Rental real estate is generally a passive activity, so its losses are subject to the passive activity loss limits." },
-      { "q": "The special $25,000 allowance for rental losses begins to phase out when MAGI exceeds:", "choices": ["$50,000", "$75,000", "$100,000", "$150,000"], "answer": 2, "explanation": "The $25,000 allowance phases out for MAGI between $100,000 and $150,000, disappearing entirely at $150,000." },
-      { "q": "What happens to passive rental losses that are disallowed in the current year?", "choices": ["They are permanently lost", "They carry forward to future years", "They convert to portfolio income", "They must be refunded to the tenant"], "answer": 1, "explanation": "Suspended passive losses carry forward indefinitely and can be used against future passive income or upon full disposition." }
+      {
+        "q": "Rental real estate is generally classified for tax purposes as a:",
+        "choices": [
+          "Passive activity",
+          "Portfolio investment",
+          "Tax-exempt activity",
+          "Non-reportable activity"
+        ],
+        "answer": 0,
+        "explanation": "Rental real estate is generally a passive activity, so its losses are subject to the passive activity loss limits."
+      },
+      {
+        "q": "The special $25,000 allowance for rental losses begins to phase out when MAGI exceeds:",
+        "choices": [
+          "$50,000",
+          "$75,000",
+          "$100,000",
+          "$150,000"
+        ],
+        "answer": 2,
+        "explanation": "The $25,000 allowance phases out for MAGI between $100,000 and $150,000, disappearing entirely at $150,000."
+      },
+      {
+        "q": "What happens to passive rental losses that are disallowed in the current year?",
+        "choices": [
+          "They are permanently lost",
+          "They carry forward to future years",
+          "They convert to portfolio income",
+          "They must be refunded to the tenant"
+        ],
+        "answer": 1,
+        "explanation": "Suspended passive losses carry forward indefinitely and can be used against future passive income or upon full disposition."
+      },
+      {
+        "q": "A taxpayer who actively participates in a rental activity may deduct up to what amount of rental losses against nonpassive income, subject to MAGI phaseout?",
+        "choices": [
+          "$3,000",
+          "$25,000",
+          "$50,000",
+          "$100,000"
+        ],
+        "answer": 1,
+        "explanation": "The special allowance lets actively participating taxpayers deduct up to $25,000 of rental losses against other income, subject to the MAGI phaseout."
+      },
+      {
+        "q": "At what modified adjusted gross income (MAGI) is the $25,000 special rental loss allowance completely phased out?",
+        "choices": [
+          "$100,000",
+          "$125,000",
+          "$150,000",
+          "$200,000"
+        ],
+        "answer": 2,
+        "explanation": "The allowance phases out at 50 cents per dollar of MAGI over $100,000 and is fully eliminated once MAGI reaches $150,000."
+      },
+      {
+        "q": "A rental loss that cannot be deducted in the current year because of the passive activity loss rules is treated how?",
+        "choices": [
+          "It is permanently lost and never deductible",
+          "It is suspended and carried forward to offset future passive income or gain on disposition",
+          "It must be carried back three years",
+          "It converts into a deductible capital loss"
+        ],
+        "answer": 1,
+        "explanation": "Disallowed passive losses are suspended and carried forward indefinitely, usable against future passive income or when the activity is fully disposed of."
+      }
     ],
     "m4": [
-      { "q": "How does depreciation taken over the years affect the property's adjusted basis at sale?", "choices": ["It increases basis", "It has no effect on basis", "It decreases basis, increasing taxable gain", "It eliminates the gain entirely"], "answer": 2, "explanation": "Depreciation reduces adjusted basis, which increases the taxable gain when the property is sold." },
-      { "q": "Unrecaptured Section 1250 gain on residential rental property is taxed at a maximum rate of:", "choices": ["0%", "15%", "25%", "37%"], "answer": 2, "explanation": "Unrecaptured Section 1250 gain (the depreciation portion) is taxed at a maximum rate of 25%." },
-      { "q": "After the 2017 Tax Cuts and Jobs Act, a Section 1031 like-kind exchange may be used only for:", "choices": ["Personal-use vehicles", "Business equipment", "Real property held for business or investment", "Collectibles and artwork"], "answer": 2, "explanation": "Post-2017, only real property held for business or investment qualifies for Section 1031 tax-deferred exchange treatment." }
+      {
+        "q": "How does depreciation taken over the years affect the property's adjusted basis at sale?",
+        "choices": [
+          "It increases basis",
+          "It has no effect on basis",
+          "It decreases basis, increasing taxable gain",
+          "It eliminates the gain entirely"
+        ],
+        "answer": 2,
+        "explanation": "Depreciation reduces adjusted basis, which increases the taxable gain when the property is sold."
+      },
+      {
+        "q": "Unrecaptured Section 1250 gain on residential rental property is taxed at a maximum rate of:",
+        "choices": [
+          "0%",
+          "15%",
+          "25%",
+          "37%"
+        ],
+        "answer": 2,
+        "explanation": "Unrecaptured Section 1250 gain (the depreciation portion) is taxed at a maximum rate of 25%."
+      },
+      {
+        "q": "After the 2017 Tax Cuts and Jobs Act, a Section 1031 like-kind exchange may be used only for:",
+        "choices": [
+          "Personal-use vehicles",
+          "Business equipment",
+          "Real property held for business or investment",
+          "Collectibles and artwork"
+        ],
+        "answer": 2,
+        "explanation": "Post-2017, only real property held for business or investment qualifies for Section 1031 tax-deferred exchange treatment."
+      },
+      {
+        "q": "At what maximum federal rate is unrecaptured Section 1250 gain (attributable to prior depreciation on real property) taxed?",
+        "choices": [
+          "15%",
+          "20%",
+          "25%",
+          "28%"
+        ],
+        "answer": 2,
+        "explanation": "Unrecaptured Section 1250 gain from depreciation taken on real property is taxed at a maximum rate of 25%."
+      },
+      {
+        "q": "Under current law (post-2017), which type of property still qualifies for a tax-deferred Section 1031 like-kind exchange?",
+        "choices": [
+          "Real property held for business or investment",
+          "Machinery and equipment",
+          "Vehicles and personal property",
+          "Stocks and bonds"
+        ],
+        "answer": 0,
+        "explanation": "After the Tax Cuts and Jobs Act, only real property held for productive use in a trade or business or for investment qualifies for Section 1031 deferral."
+      },
+      {
+        "q": "An investor sells a rental property. The adjusted basis used to compute gain is best described as the original cost:",
+        "choices": [
+          "Plus accumulated depreciation",
+          "Plus capital improvements, minus accumulated depreciation",
+          "Minus capital improvements, plus depreciation",
+          "With no adjustments at all"
+        ],
+        "answer": 1,
+        "explanation": "Adjusted basis equals original cost increased by capital improvements and decreased by depreciation taken, which determines the gain on sale."
+      }
     ]
   },
   "flashcards": {
     "m1": [
-      { "front": "What counts as taxable rental income?", "back": "Rent, advance rent, lease-cancellation payments, tenant-paid expenses, and the value of property/services received in place of rent." },
-      { "front": "Are security deposits income?", "back": "Not when received if you plan to return them; a deposit you keep (for damages or unpaid rent) becomes income at that point." },
-      { "front": "Common deductible operating expenses", "back": "Mortgage interest, property taxes, insurance, utilities, management fees, HOA dues, advertising, repairs, supplies." },
-      { "front": "Repair vs. improvement", "back": "A repair keeps property in operating condition and is currently deductible; an improvement betters/restores it and must be capitalized." },
-      { "front": "Where are rental income and expenses reported?", "back": "Generally on Schedule E (Supplemental Income and Loss)." }
+      {
+        "front": "What counts as taxable rental income?",
+        "back": "Rent, advance rent, lease-cancellation payments, tenant-paid expenses, and the value of property/services received in place of rent."
+      },
+      {
+        "front": "Are security deposits income?",
+        "back": "Not when received if you plan to return them; a deposit you keep (for damages or unpaid rent) becomes income at that point."
+      },
+      {
+        "front": "Common deductible operating expenses",
+        "back": "Mortgage interest, property taxes, insurance, utilities, management fees, HOA dues, advertising, repairs, supplies."
+      },
+      {
+        "front": "Repair vs. improvement",
+        "back": "A repair keeps property in operating condition and is currently deductible; an improvement betters/restores it and must be capitalized."
+      },
+      {
+        "front": "Where are rental income and expenses reported?",
+        "back": "Generally on Schedule E (Supplemental Income and Loss)."
+      }
     ],
     "m2": [
-      { "front": "Recovery period for residential rental property", "back": "27.5 years, straight-line, under MACRS (verify current rules)." },
-      { "front": "Is land depreciable?", "back": "No — land never wears out or becomes obsolete, so only the building portion is depreciated." },
-      { "front": "Basis allocation", "back": "Split purchase price between non-depreciable land and the depreciable building, often using the property-tax assessed-value ratio." },
-      { "front": "'Placed in service' meaning", "back": "When the property is ready and available to be rented — when depreciation begins." },
-      { "front": "Depreciation method for real property", "back": "Straight-line MACRS with a mid-month convention." }
+      {
+        "front": "Recovery period for residential rental property",
+        "back": "27.5 years, straight-line, under MACRS (verify current rules)."
+      },
+      {
+        "front": "Is land depreciable?",
+        "back": "No — land never wears out or becomes obsolete, so only the building portion is depreciated."
+      },
+      {
+        "front": "Basis allocation",
+        "back": "Split purchase price between non-depreciable land and the depreciable building, often using the property-tax assessed-value ratio."
+      },
+      {
+        "front": "'Placed in service' meaning",
+        "back": "When the property is ready and available to be rented — when depreciation begins."
+      },
+      {
+        "front": "Depreciation method for real property",
+        "back": "Straight-line MACRS with a mid-month convention."
+      }
     ],
     "m3": [
-      { "front": "How is rental real estate generally classified?", "back": "As a passive activity, even if the owner manages it." },
-      { "front": "Passive loss limitation", "back": "Passive losses generally offset only passive income, not wages or portfolio income." },
-      { "front": "$25,000 special allowance", "back": "Active participants may deduct up to $25,000 of rental losses against other income (verify current figure)." },
-      { "front": "Phase-out of the $25,000 allowance", "back": "Phases out for MAGI between $100,000 and $150,000; fully gone at $150,000." },
-      { "front": "Suspended passive losses", "back": "Carry forward indefinitely; usable against future passive income or when the activity is fully disposed of." }
+      {
+        "front": "How is rental real estate generally classified?",
+        "back": "As a passive activity, even if the owner manages it."
+      },
+      {
+        "front": "Passive loss limitation",
+        "back": "Passive losses generally offset only passive income, not wages or portfolio income."
+      },
+      {
+        "front": "$25,000 special allowance",
+        "back": "Active participants may deduct up to $25,000 of rental losses against other income (verify current figure)."
+      },
+      {
+        "front": "Phase-out of the $25,000 allowance",
+        "back": "Phases out for MAGI between $100,000 and $150,000; fully gone at $150,000."
+      },
+      {
+        "front": "Suspended passive losses",
+        "back": "Carry forward indefinitely; usable against future passive income or when the activity is fully disposed of."
+      }
     ],
     "m4": [
-      { "front": "Adjusted basis", "back": "Original cost plus capital improvements, minus depreciation taken (or that should have been taken)." },
-      { "front": "Depreciation recapture", "back": "The depreciation portion of gain ('unrecaptured Section 1250 gain') is taxed at a maximum of 25%." },
-      { "front": "Long-term vs. ordinary gain", "back": "Gain on property held over one year is generally long-term capital gain taxed at favorable rates." },
-      { "front": "Section 1031 like-kind exchange", "back": "Defers gain by exchanging investment real property for like-kind real property; 45-day ID and 180-day closing rules apply." },
-      { "front": "1031 after the 2017 TCJA", "back": "Only real property qualifies; personal property no longer does. Consult a tax professional." }
+      {
+        "front": "Adjusted basis",
+        "back": "Original cost plus capital improvements, minus depreciation taken (or that should have been taken)."
+      },
+      {
+        "front": "Depreciation recapture",
+        "back": "The depreciation portion of gain ('unrecaptured Section 1250 gain') is taxed at a maximum of 25%."
+      },
+      {
+        "front": "Long-term vs. ordinary gain",
+        "back": "Gain on property held over one year is generally long-term capital gain taxed at favorable rates."
+      },
+      {
+        "front": "Section 1031 like-kind exchange",
+        "back": "Defers gain by exchanging investment real property for like-kind real property; 45-day ID and 180-day closing rules apply."
+      },
+      {
+        "front": "1031 after the 2017 TCJA",
+        "back": "Only real property qualifies; personal property no longer does. Consult a tax professional."
+      }
     ]
   }
 }
